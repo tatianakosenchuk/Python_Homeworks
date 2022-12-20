@@ -18,7 +18,6 @@ def Fib(num):
         return Fib(num-1) + Fib(num-2)
 
 def Neg_Fib(num):
-    num1, num2 = 1, -1
     if num == 1:                       
         return 1
     elif num == 2:                       

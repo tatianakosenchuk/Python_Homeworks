@@ -9,3 +9,5 @@ for i in str(number):
     if i != '.':
         sum += int(i)
 print(sum)
+
+

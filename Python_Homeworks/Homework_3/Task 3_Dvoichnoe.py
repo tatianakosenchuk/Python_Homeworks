@@ -13,9 +13,10 @@
 def Convert_To_Double(number):
     double_list=[]
     while number:
-        double_list.insert(0, str(number%2))
+        double_list.insert(0,number%2)
         number//=2
+    print(*double_list,sep='')
     return double_list
     
 
-print(''.join(Convert_To_Double(int(input('Enter number ')))))
+Convert_To_Double(int(input('Enter number ')))

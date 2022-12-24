@@ -24,8 +24,8 @@ def Rand_list(len_list):
 
 
 def Max_Mix_fractional(array):
-    max, min = array[0] % 1, array[0] % 1
-    for i in range(len(array)):
+    max = min = array[0] % 1
+    for i in range(1,len(array)):
         if array[i] % 1 > max:
             max = array[i] % 1
         if array[i] % 1 < min:

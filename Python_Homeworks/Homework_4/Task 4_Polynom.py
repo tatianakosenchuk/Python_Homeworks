@@ -28,10 +28,10 @@ def Polynom(k, file_path):
         return polynom
 
 
-for i in range(3):
+for i in range(2):
     Polynom(int(input('Enter a natural degree for calculation ')),
             'Homeworks/Python_Homeworks/Homework_4/Poly1.txt')
 
-for i in range(3):
+for i in range(2):
     Polynom(int(input('Enter a natural degree for calculation ')),
             'Homeworks/Python_Homeworks/Homework_4/Poly2.txt')

@@ -62,3 +62,13 @@ def RLE_Decode(file1=input('Enter the name of the file to decode: '), file2=inpu
 
 # RLE_Encode()
 RLE_Decode()
+
+
+# def rle_decode(name):
+    #     if path.exists(name):
+#         with open(name) as my_f:
+#             for i in my_f:
+#                 word_nums = ["".join(g) for k, g in groupby(i.strip(), key=str.isdigit)]
+#                 print("".join([f"{int(word_nums[i]) * word_nums[i + 1]}" for i in range(0, len(word_nums), 2)]))
+#     else:
+#         print("The files do not exist in the system!")

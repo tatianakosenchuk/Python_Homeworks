@@ -14,8 +14,18 @@ def Sort_dictionary(lst):
         #     result[i[0]] = [i]
         # else:
         #     result[i[0]].append(i)
+        #     result[i[0]] +=[i] - lj,добавляет в конец списка
     return result
 
 
-nms = input('Enter emploees names: ').split()
+# def thesaurus(*args):
+#     if "" not in args:
+#         return {ch: list(names) for ch, names in groupby(sorted(args), key=lambda i: i[0]) if ch}
+#     return "Error"
+
+# def thesaurus(*args):
+#     if "" not in args:
+#         return {ch[0]: list(filter(lambda el: el.startswith(ch[0]), args)) for ch in sorted(args)}
+#     return "Error"
+# nms = input('Enter emploees names: ').split()
 print(Sort_dictionary(nms))

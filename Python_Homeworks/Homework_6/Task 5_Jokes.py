@@ -4,6 +4,7 @@
 # out
 # ['дом ночью мягкий', 'огонь завтра зеленый', 'лес вчера яркий',
 #     'автомобиль сегодня веселый', 'город позавчера утопичный']
+from random import choice, randrange
 from random import choice
 
 nouns = ["автомобиль", "лес", "огонь", "город", "дом"]
@@ -32,3 +33,28 @@ def Jokes(num, check=False):
 
 
 print(Jokes(num=int(input('Enter quantity of jokes required: ')), check=True))
+
+
+# def some_jokes(n: int, repeat: bool = False) -> list:
+#     """
+#     Функция возвращает случайные шутки, собранные из трех списков слов
+
+#     :param n: количество шуток
+#     :param repeat: уникальные/неуникальные
+#     :return: список случайных шуток
+
+#     """
+#     no, adv, adj = nouns.copy(), adverbs.copy(), adjectives.copy()
+#     list_of_j = []
+#     list_min = min(no, adv, adj)
+
+#     for i in range(len(list_min) % n if repeat else n):
+#         num = randrange(len(list_min))
+#         list_of_j.append(f"{no.pop(num)} {adv.pop(num)} {adj.pop(num)}" if repeat
+#                          else f"{choice(nouns)} {choice(adverbs)} {choice(adjectives)}")
+#     return list_of_j
+
+
+# print(some_jokes(100, True))
+# print(help(some_jokes))
+# print(some_jokes.__doc__)

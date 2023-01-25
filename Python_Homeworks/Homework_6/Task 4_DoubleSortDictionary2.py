@@ -20,3 +20,11 @@ def Double_sort_dictionary(lst):
 
 names = input('Enter emploees names and surnames: ').split()
 print(Double_sort_dictionary(names))
+
+
+# def thesaurus_adv(*args):
+#     s_n_sort = {}
+#     for s_n in args:
+#         s_n_sort.setdefault(s_n.split()[1][0], {}).setdefault(
+#             s_n.split()[0][0], []).append(s_n)
+#     return dict(OrderedDict(sorted(s_n_sort.items(), key=lambda x: x[0])))

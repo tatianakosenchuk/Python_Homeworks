@@ -87,7 +87,7 @@ def Delete_record(file_path):
                     else:
                         break
         else:
-            lgging.warning("Incorrect ID for deletition")
+            logging.warning("Incorrect ID for deletition")
             print(f"\nID {delete_ID} нет в базе данных.\n")
 
 

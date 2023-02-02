@@ -1,10 +1,9 @@
 from telegram import Update
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-from logger import *
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes,CallbackQueryHandler
 
 async def start(update, _):
     await update.message.reply_text(f'Здравствуйте, {update.effective_user.first_name}!\n'
-                                    'Это бот-калькулятор.\n')
+                                    'Приветствую Вас в игре "Крестики-нолики".\n')
     await update.message.reply_text('Пожалуйста, введите команду и два числа через пробел:\n'
                                     '/sum  - "+ Сложение"\n'
                                     '/sub  - "- Вычитание"\n'

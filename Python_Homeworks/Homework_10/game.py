@@ -1,8 +1,6 @@
 from telegram.ext import ConversationHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from utils import keyboard
-
 board = [
     [InlineKeyboardButton(' ', callback_data='0,0'),
      InlineKeyboardButton(' ', callback_data='0,1'),

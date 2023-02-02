@@ -14,9 +14,9 @@ async def start(update,_):
 async def stop(update,_):
     return ApplicationBuilder().END
 
-# logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-#                         level=logging.INFO,
-#                         filename='bot.log')
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                            level=logging.INFO,
+                             filename='bot.log')
 
 app = ApplicationBuilder().token(TOKEN).build()
 
@@ -35,11 +35,5 @@ fallbacks=[CommandHandler('stop', stop)])
     
 
 app.add_handler(conv_handler)
-
-print('start')
-    # Start the Bot
 app.run_polling()
-    # Run the bot until you press Ctrl-C or the process receives SIGINT,
-    # SIGTERM or SIGABRT. This should be used most of the time, since
-    # start_polling() is non-blocking and will stop the bot gracefully.
-
+   
